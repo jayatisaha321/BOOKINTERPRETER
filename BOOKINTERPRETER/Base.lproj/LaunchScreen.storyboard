@@ -1,25 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkw-0q-xKI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeF-4e-QVe">
+                                        <rect key="frame" x="8" y="230" width="304" height="108"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xeF-4e-QVe" secondAttribute="height" multiplier="359:128" id="bcf-BR-ft2"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FQj-fu-Wtg">
+                                        <rect key="frame" x="23" y="269" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="HzG-PK-MhB"/>
+                                            <constraint firstAttribute="width" secondItem="FQj-fu-Wtg" secondAttribute="height" multiplier="1:1" id="Ycv-K8-Lse"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKINTERPRETER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="y9v-Hv-shE">
+                                        <rect key="frame" x="58" y="267.5" width="239" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96520918607711792" green="0.96874624490737915" blue="0.97217589616775513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FQj-fu-Wtg" firstAttribute="centerY" secondItem="jkw-0q-xKI" secondAttribute="centerY" id="0wd-ag-6nf"/>
+                                    <constraint firstItem="xeF-4e-QVe" firstAttribute="leading" secondItem="jkw-0q-xKI" secondAttribute="leading" constant="8" id="A0R-GA-aOE"/>
+                                    <constraint firstItem="FQj-fu-Wtg" firstAttribute="leading" secondItem="jkw-0q-xKI" secondAttribute="leading" constant="23" id="GSu-pe-gnG"/>
+                                    <constraint firstItem="y9v-Hv-shE" firstAttribute="leading" secondItem="FQj-fu-Wtg" secondAttribute="trailing" constant="5" id="PAx-Jh-Y5l"/>
+                                    <constraint firstAttribute="trailing" secondItem="y9v-Hv-shE" secondAttribute="trailing" constant="23" id="Snd-js-Swu"/>
+                                    <constraint firstAttribute="trailing" secondItem="xeF-4e-QVe" secondAttribute="trailing" constant="8" id="b6a-fE-fLB"/>
+                                    <constraint firstItem="y9v-Hv-shE" firstAttribute="centerY" secondItem="jkw-0q-xKI" secondAttribute="centerY" id="bRi-Xj-tFK"/>
+                                    <constraint firstItem="xeF-4e-QVe" firstAttribute="centerX" secondItem="jkw-0q-xKI" secondAttribute="centerX" id="mbk-Fk-put"/>
+                                    <constraint firstItem="xeF-4e-QVe" firstAttribute="centerY" secondItem="jkw-0q-xKI" secondAttribute="centerY" id="qAM-4J-R1x"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jkw-0q-xKI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VhL-9n-Y4l"/>
+                            <constraint firstItem="jkw-0q-xKI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cBb-3g-ABI"/>
+                            <constraint firstItem="jkw-0q-xKI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="eFd-6g-Eku"/>
+                            <constraint firstItem="jkw-0q-xKI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jFE-Vw-sjz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>

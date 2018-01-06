@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C816CF191FC5FA7500C4B5E9 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C816CF181FC5FA7500C4B5E9 /* GlobalViewController.swift */; };
+		C816CF1B1FC5FAAD00C4B5E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C816CF1A1FC5FAAD00C4B5E9 /* LoginViewController.swift */; };
 		C8FA1AA11FC06ED000F6EE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA1AA01FC06ED000F6EE70 /* AppDelegate.swift */; };
 		C8FA1AA31FC06ED000F6EE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA1AA21FC06ED000F6EE70 /* ViewController.swift */; };
 		C8FA1AA61FC06ED000F6EE70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FA1AA41FC06ED000F6EE70 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C816CF181FC5FA7500C4B5E9 /* GlobalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
+		C816CF1A1FC5FAAD00C4B5E9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8FA1A9D1FC06ED000F6EE70 /* BOOKINTERPRETER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOOKINTERPRETER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FA1AA01FC06ED000F6EE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8FA1AA21FC06ED000F6EE70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C816CF141FC5FA2300C4B5E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C816CF151FC5FA2300C4B5E9 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C816CF151FC5FA2300C4B5E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C816CF1A1FC5FAAD00C4B5E9 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C816CF161FC5FA5900C4B5E9 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				C816CF171FC5FA5900C4B5E9 /* Controller */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		C816CF171FC5FA5900C4B5E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C816CF181FC5FA7500C4B5E9 /* GlobalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C8FA1A941FC06ED000F6EE70 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +90,8 @@
 		C8FA1A9F1FC06ED000F6EE70 /* BOOKINTERPRETER */ = {
 			isa = PBXGroup;
 			children = (
+				C816CF161FC5FA5900C4B5E9 /* Global */,
+				C816CF141FC5FA2300C4B5E9 /* Login */,
 				C8FA1AA01FC06ED000F6EE70 /* AppDelegate.swift */,
 				C8FA1AA21FC06ED000F6EE70 /* ViewController.swift */,
 				C8FA1AA41FC06ED000F6EE70 /* Main.storyboard */,
@@ -136,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C816CF1B1FC5FAAD00C4B5E9 /* LoginViewController.swift in Sources */,
 				C8FA1AA31FC06ED000F6EE70 /* ViewController.swift in Sources */,
+				C816CF191FC5FA7500C4B5E9 /* GlobalViewController.swift in Sources */,
 				C8FA1AA11FC06ED000F6EE70 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +322,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
